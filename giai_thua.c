@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
-double giaithua(int m)
+double giaithua(double m)
 {
-    int tich=1;
-    for (int c=1;c<=m;c++)
+    double tich=1;
+    for (double c=1;c<=m;c++)
     {
         tich=tich*c;
         
@@ -12,22 +12,24 @@ double giaithua(int m)
 }
 int main()
 {
-    int x,n;
+    double x,n;
 
-    scanf("%d",&x);
-    scanf("%d",&n);
-     int m=2*n;
+    scanf("%lf",&x);
+    scanf("%lf",&n);
     double tong=1;
-    double k=giaithua(m);
+double k;
     if (n<1 || x<0)
     {
         printf("ERROR");
+        return 0;
     }
     else 
     {
-        for (int i=1;i<=n;i++)
+
+        for (double m=1;m<=n;m++)
         {
-            double c= pow(x,2*i)/k;
+              k=giaithua(2*m);
+            double c= pow(x,2*m)/k;
             tong=tong+c;
         }
     }
