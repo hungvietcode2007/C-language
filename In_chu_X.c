@@ -23,7 +23,7 @@ memset(s, '*', n);
 s[x]='X';
 printf("%s\n",s);
 s[x]='*';
-for (int i=m+1;i>m;i++)
+for (int i=m+1;i<n;i++)
 {s[i] = '\\';
 
 s[n-i-1] = '/';
