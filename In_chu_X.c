@@ -15,7 +15,6 @@ int m=n/2;
 int x=n/2+0.5;
 for (int i=0;i<m;i++)
 {s[i] = '\\';
-
 s[n-i-1] = '/';
 printf("%s\n",s);
 memset(s, '*', n);
